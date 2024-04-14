@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:goldenrod;
+    font-family: 'Abel', sans-serif;
+    background-color: goldenrod;
+    border-radius: 5px;
 }
 
 header {
@@ -24,82 +27,80 @@ header > table > td {
     transition-property: background-color;
     border-radius: 8px;
 }
+
 .navbar-buttons:hover {
-    background-color:#E0E0E0;
+    background-color: #E0E0E0;
     color: gray;
 }
 
 .nav-header {
-  
-    
-        animation: rainbow 1s infinite;
+    animation: rainbow 1s infinite;
 }
-      
-    
 
-    @keyframes rainbow {
-        0% {
-          color: red;
-        }
-        16.7% {
-          color: orange;
-        }
-        33.3% {
-          color: yellow;
-        }
-        50% {
-          color: green;
-        }
-        66.7% {
-          color: blue;
-        }
-        83.3% {
-          color: indigo;
-        }
-        100% {
-          color: violet;
-        }
-      }
+@keyframes rainbow {
+    0% {
+        color: red;
+    }
+    16.7% {
+        color: orange;
+    }
+    33.3% {
+        color: yellow;
+    }
+    50% {
+        color: green;
+    }
+    66.7% {
+        color: blue;
+    }
+    83.3% {
+        color: indigo;
+    }
+    100% {
+        color: violet;
+    }
+}
 
-    h2, p, h3, h4, h5, h6, span {
-        color:darkslategray;
-    }
+h2, p, h3, h4, h5, h6, span {
+    color: darkslategray;
+}
 
-  .nav-letsgo {
-        background-color:lime;
-        border:none;
-        
-        width: 90px;
-        height:60px;
-    }
-   .nav-letsgo:hover {
-        width:120px;
-        height:90px;
-        cursor:pointer;
-        transition-duration: 0.35s;
-    }
-    .nav-letsgo {
-        width:90px;
-        height:60px;
-        transition-duration: 0.35s;
-    }
-    
-    a:hover {
-        cursor:pointer;
-    }
+.nav-letsgo {
+    background-color: lime;
+    border: none;
+    width: 90px;
+    height: 60px;
+}
 
-    a {
-        text-decoration: none;
-    }
+.nav-letsgo:hover {
+    width: 120px;
+    height: 90px;
+    cursor: pointer;
+    transition-duration: 0.35s;
+}
 
-    .nav-addcat {
-        border: none;
-        background-color:dodgerblue;
-        color:white;
-        width:60;;
-        height:30px;
-    }
+.nav-letsgo {
+    width: 90px;
+    height: 60px;
+    transition-duration: 0.35s;
+}
 
-    .nav-addcat:hover {
-        background-color: darkblue;
-    }
+a:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-addcat {
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    width: 60px; /* Fixed width */
+    height: 30px;
+}
+
+.nav-addcat:hover {
+    background-color: darkblue;
+}
