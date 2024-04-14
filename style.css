@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:goldenrod;
+}
+
+header {
+    background-color: darkslategray;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+header > table > td {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 25px;
+}
+
+.navbar-buttons {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    transition: background-color 0.3s ease;
+    transition-property: background-color;
+    border-radius: 8px;
+}
+.navbar-buttons:hover {
+    background-color:#E0E0E0;
+    color: gray;
+}
+
+.nav-header {
+  
+    
+        animation: rainbow 1s infinite;
+}
+      
+    
+
+    @keyframes rainbow {
+        0% {
+          color: red;
+        }
+        16.7% {
+          color: orange;
+        }
+        33.3% {
+          color: yellow;
+        }
+        50% {
+          color: green;
+        }
+        66.7% {
+          color: blue;
+        }
+        83.3% {
+          color: indigo;
+        }
+        100% {
+          color: violet;
+        }
+      }
+
+    h2, p, h3, h4, h5, h6, span {
+        color:darkslategray;
+    }
+
+  .nav-letsgo {
+        background-color:lime;
+        border:none;
+        
+        width: 90px;
+        height:60px;
+    }
+   .nav-letsgo:hover {
+        width:120px;
+        height:90px;
+        cursor:pointer;
+        transition-duration: 0.35s;
+    }
+    .nav-letsgo {
+        width:90px;
+        height:60px;
+        transition-duration: 0.35s;
+    }
+    
+    a:hover {
+        cursor:pointer;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .nav-addcat {
+        border: none;
+        background-color:dodgerblue;
+        color:white;
+        width:60;;
+        height:30px;
+    }
+
+    .nav-addcat:hover {
+        background-color: darkblue;
+    }
