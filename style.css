@@ -1,22 +1,14 @@
+/* Common Styles */
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 body {
     font-family: 'Abel', sans-serif;
-    background-color: goldenrod;
+    background-color: #FFA70C;
     border-radius: 5px;
-}
-
-header {
-    background-color: darkslategray;
-    height: 50px;
-    width: 100%;
-    text-align: center;
-}
-
-header > table > td {
-    text-align: center;
-    vertical-align: middle;
-    padding-top: 25px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
 }
 
 .navbar-buttons {
@@ -34,53 +26,31 @@ header > table > td {
 }
 
 .nav-header {
-    animation: rainbow 1s infinite;
+     color:  #98FF98;
 }
 
-@keyframes rainbow {
-    0% {
-        color: red;
-    }
-    16.7% {
-        color: orange;
-    }
-    33.3% {
-        color: yellow;
-    }
-    50% {
-        color: green;
-    }
-    66.7% {
-        color: blue;
-    }
-    83.3% {
-        color: indigo;
-    }
-    100% {
-        color: violet;
-    }
-}
 
 h2, p, h3, h4, h5, h6, span {
     color: darkslategray;
 }
 
 .nav-letsgo {
+    font-family: Abel, sans-serif;
     background-color: lime;
-    border: none;
+    border: 2px solid green;
     width: 90px;
     height: 60px;
 }
 
 .nav-letsgo:hover {
-    width: 120px;
-    height: 90px;
+    width: 140px;
+    height: 75px;
     cursor: pointer;
     transition-duration: 0.35s;
 }
 
 .nav-letsgo {
-    width: 90px;
+    width: 120px;
     height: 60px;
     transition-duration: 0.35s;
 }
@@ -94,15 +64,19 @@ a {
 }
 
 .nav-addcat {
-    border: none;
+    border: 0.5px solid blue;
     background-color: dodgerblue;
     color: white;
     width: 60px; /* Fixed width */
-    height: 30px;
+    height: 30px; /* Fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-addcat:hover {
     background-color: darkblue;
+    cursor: pointer;
 }
 
 /* Responsive CSS */
@@ -124,4 +98,22 @@ a {
     header > table > tr > td {
         display: block;
     }
+}
+
+/* Styles specific to index.html */
+header {
+    background-color: darkslategray;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > table > td {
+    padding: 0 10px;
+}
+
+.cutehubimage {
+    border: 3px solid black;
 }
