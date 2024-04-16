@@ -65,6 +65,7 @@ a {
 
 .nav-addcat {
     border: 0.5px solid blue;
+    font-family: 'Abel', sans-serif;
     background-color: dodgerblue;
     color: white;
     width: 60px; /* Fixed width */
